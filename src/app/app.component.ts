@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { containers as CONTAINERS } from './shared/containers';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'glasscontainer-magdeburg';
+  containers = CONTAINERS;
+
+  trackByFn(index: number): number {
+    return index;
+  }
+
 }
