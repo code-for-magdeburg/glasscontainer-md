@@ -13,6 +13,8 @@
 # profiling files
 chrome-profiler-events*.json
 
+workers-site
+
 # IDEs and editors
 /.idea
 .project
