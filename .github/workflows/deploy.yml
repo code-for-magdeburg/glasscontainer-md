@@ -27,5 +27,5 @@ jobs:
       - name: Publish
         uses: cloudflare/wrangler-action@1.3.0
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
+          apiToken: a23ff52eaa952b2cff8669432e77b760c2cb4
           workingDirectory: 'dist'
