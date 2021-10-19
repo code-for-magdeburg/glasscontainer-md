@@ -1,23 +1,19 @@
 name: Test
-
-on:
-  pull_request:
-    types: [ opened ]
+on: push
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x]
-
-    steps:
+  build:
+  runs-on: ubuntu-latest
+  steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+    - name: Use Node.js 14.x
+      uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm test
+        node-version: 14.x
+
+    - name: Setup
+      run: npm ci
+
+    - name: Test
+      run: |
+        npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
