@@ -7,7 +7,7 @@ import { containers as CONTAINERS } from './shared/containers';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'glasscontainer-magdeburg';
+  title = 'glascontainer-magdeburg';
   containers = CONTAINERS;
 
   trackByFn(index: number): number {
