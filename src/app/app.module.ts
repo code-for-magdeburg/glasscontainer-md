@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListModule } from './pages/list/list.module';
 import { MarkerService } from './services/marker.service';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MarkerService } from './services/marker.service';
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
-    ListModule
+    ListModule,
+    ScullyLibModule
   ],
   providers: [
     MarkerService
