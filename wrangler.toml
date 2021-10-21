@@ -1,4 +1,4 @@
-name = "glascontainer-magdeburg"
+name = "prod"
 type = "webpack"
 route = ''
 zone_id = ''
@@ -8,3 +8,6 @@ workers_dev = true
 site = {bucket = "./dist/glascontainer-magdeburg",entry-point = "workers-site"}
 compatibility_date = "2021-10-19"
 account_id='7e2b90214b54908925e00ef2f9f6465d'
+
+[env.develop]
+name = "develop"
