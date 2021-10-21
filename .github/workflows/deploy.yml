@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - prod
-      - chore/pipeline-improvements
+      - develop
 
 jobs:
   build:
