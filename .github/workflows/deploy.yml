@@ -28,5 +28,5 @@ jobs:
         with:
           apiKey: ${{ secrets.API_KEY }}
           email: ${{ secrets.EMAIL }}
-          if: ${{ github.ref == 'refs/heads/chore/pipeline-improvements' }}
+          if: ${{ github.ref == 'refs/heads/chore/pipeline-bla' }}
           environment: develop
