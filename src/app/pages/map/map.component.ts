@@ -30,7 +30,7 @@ export class MapComponent{
     private initMap(): void {
         this.map = L.map('map', {
             center: [ 52.12773, 11.62916 ],
-            zoom: 11
+            zoom: 14
         });
 
         const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
