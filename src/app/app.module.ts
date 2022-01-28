@@ -8,17 +8,27 @@ import { AppComponent } from './app.component';
 import { ListModule } from './pages/list/list.module';
 import { MarkerService } from './services/marker.service';
 import { ScullyLibModule } from '@scullyio/ng-lib';
+import { HeaderComponent } from './header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from "@angular/material/icon";
+import { MatMenuModule } from "@angular/material/menu";
+import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
     ListModule,
-    ScullyLibModule
+    ScullyLibModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatMenuModule,
+    MatButtonModule,
   ],
   providers: [
     MarkerService
