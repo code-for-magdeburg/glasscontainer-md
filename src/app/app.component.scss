@@ -1,6 +1,7 @@
-html, body {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    min-width: 100vw;
+@import 'color';
+
+.skeleton {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: $box;
 }
