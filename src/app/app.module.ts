@@ -4,35 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListModule } from './pages/list/list.module';
-import { MarkerService } from './services/marker.service';
 import { ScullyLibModule } from '@scullyio/ng-lib';
-import { PopUpService } from './services/popup.service';
-import { HeaderComponent } from './header/header.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatIconModule } from "@angular/material/icon";
-import { MatMenuModule } from "@angular/material/menu";
-import { MatButtonModule } from "@angular/material/button";
+import { HeaderModule } from './header/header.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule,
-    HttpClientModule,
-    ListModule,
-    ScullyLibModule,
     BrowserAnimationsModule,
-    MatIconModule,
-    MatMenuModule,
-    MatButtonModule,
-  ],
-  providers: [
-    MarkerService,
-    PopUpService
+    BrowserModule,
+    HeaderModule,
+    HttpClientModule,
+    ScullyLibModule,
   ],
   bootstrap: [AppComponent]
 })
