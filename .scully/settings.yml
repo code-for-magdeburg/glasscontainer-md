@@ -1,2 +1,11 @@
 identifier: k5vf16e8dcuayfb6
 allowErrorCollect: false
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: glascontainer-magdeburg
+homeFolder: C:\projects\civic-tech\glasscontainer-magdeburg
+distFolder: dist/glascontainer-magdeburg
+outDir: C:\projects\civic-tech\glasscontainer-magdeburg\dist\static
+handle404: ''
